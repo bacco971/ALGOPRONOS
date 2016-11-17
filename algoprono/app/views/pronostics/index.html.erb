@@ -1,0 +1,9 @@
+<div class="container">
+
+  <h1>Offers</h1>
+  <% @pronostics.each do |pronostic| %>
+    <%= render "shared/offercard", pronostic: pronostic %>
+  <% end %>
+</div>
+
+

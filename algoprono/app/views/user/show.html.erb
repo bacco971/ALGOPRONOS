@@ -1,0 +1,17 @@
+<div class="wrapper text-center padded-2">
+
+  <div class="container">
+    <div>
+      <h2>About me</h2>
+      <p><%= @user.username %></p>
+    </div>
+    <div>
+      <% if @user == current_user %>
+        <%= link_to "Edit my profile", edit_user_registration_path %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+

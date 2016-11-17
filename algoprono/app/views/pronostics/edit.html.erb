@@ -1,0 +1,14 @@
+<div class="container">
+
+  <div>
+      <h1>Edit offer</h1>
+
+      <%= render 'form' %>
+
+  </div>
+
+  <div class="btn btn-default">
+    <%= link_to "Delete this offer", pronostic_path(@pronostic), {class: "btn btn-default", method: :delete, data: { confirm: "Are you sure you want to delete this offer?" }} %>
+  </div>
+
+</div>
